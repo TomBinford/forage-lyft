@@ -1,5 +1,5 @@
-from battery.battery import Battery
-from engine.engine import Engine
+from battery import Battery
+from engine import Engine
 
 
 class Car:
