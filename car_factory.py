@@ -1,14 +1,14 @@
 from car import Car
 from engine import *
 from battery import *
-from datetime import datetime
+from datetime import date
 
 
 class CarFactory:
     @staticmethod
     def create_calliope(
-        last_service_date: datetime,
-        current_date: datetime,
+        last_service_date: date,
+        current_date: date,
         last_service_mileage: int,
         current_mileage: int,
     ):
@@ -19,8 +19,8 @@ class CarFactory:
 
     @staticmethod
     def create_glissade(
-        last_service_date: datetime,
-        current_date: datetime,
+        last_service_date: date,
+        current_date: date,
         last_service_mileage: int,
         current_mileage: int,
     ):
@@ -31,8 +31,8 @@ class CarFactory:
 
     @staticmethod
     def create_palindrome(
-        last_service_date: datetime,
-        current_date: datetime,
+        last_service_date: date,
+        current_date: date,
         warning_light_is_on: bool,
     ):
         return Car(
@@ -42,8 +42,8 @@ class CarFactory:
 
     @staticmethod
     def create_rorschach(
-        last_service_date: datetime,
-        current_date: datetime,
+        last_service_date: date,
+        current_date: date,
         last_service_mileage: int,
         current_mileage: int,
     ):
@@ -54,8 +54,8 @@ class CarFactory:
 
     @staticmethod
     def create_thovex(
-        last_service_date: datetime,
-        current_date: datetime,
+        last_service_date: date,
+        current_date: date,
         last_service_mileage: int,
         current_mileage: int,
     ):
