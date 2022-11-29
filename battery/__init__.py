@@ -1,3 +1,3 @@
 from battery.battery import Battery
-from nubbin_battery import NubbinBattery
-from spindler_battery import SpindlerBattery
+from battery.nubbin_battery import NubbinBattery
+from battery.spindler_battery import SpindlerBattery
