@@ -1,4 +1,3 @@
-from typing import Optional
 from battery import Battery
 from engine import Engine
 from tires import Tires
