@@ -6,14 +6,14 @@ from battery import *
 class TestBattery(unittest.TestCase):
     def test_spindler_should_be_serviced(self):
         today = datetime.today().date()
-        future = today + timedelta(days=365 * 2 + 1)
+        future = today + timedelta(days=365 * 3 + 1)
         spindler = SpindlerBattery(today, future)
         print(spindler.should_be_serviced())
         self.assertTrue(spindler.should_be_serviced())
 
     def test_spindler_should_not_be_serviced(self):
         today = datetime.today().date()
-        future = today + timedelta(days=365)
+        future = today + timedelta(days=365 * 3 - 5)
         spindler = SpindlerBattery(today, future)
         self.assertFalse(spindler.should_be_serviced())
 
